@@ -10,10 +10,12 @@ jobs:
   upload:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v4
+
       - uses: LanceMcCarthy/Action-AzureBlobUpload@v3
         name: Uploading to Azure storage blob
         with:
           connection_string: ${{secrets.AZURE_STORAGE_CONNECTION_STRING}}
           container_name: photos
-          source_folder: src/photos/
+          source_folder: photos/
           clean_destination_folder: true
