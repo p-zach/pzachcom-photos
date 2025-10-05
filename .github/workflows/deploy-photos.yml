@@ -10,18 +10,10 @@ jobs:
   upload:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - name: Install Azure CLI
-        uses: azure/setup-azure@v4
+      - uses: LanceMcCarthy/Action-AzureBlobUpload@v3
+        name: Uploading to Azure storage blob
         with:
-          enable-AzPSSession: false
-
-      - name: Upload to Blob
-        run: |
-          az storage blob upload-batch \
-            --connection-string "$AZURE_STORAGE_CONNECTION_STRING" \
-            -s photos \
-            -d photos
-        env:
-          AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
+          connection_string: ${{secrets.AZURE_STORAGE_CONNECTION_STRING}}
+          container_name: photos
+          source_folder: photos/
+          clean_destination_folder: true
