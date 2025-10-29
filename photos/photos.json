@@ -1,11 +1,46 @@
 {
     "photos": [
-        "IMG_7738.jpg",
-        "IMG_7754.jpg",
-        "IMG_7766.jpg",
-        "IMG_7882.jpg",
-        "IMG_7891.jpg",
-        "IMG_8300.jpg",
-        "IMG_8337.jpg"
+        {
+            "name": "IMG_7738.jpg",
+            "width": 4000,
+            "height": 4000,
+            "alt": "Yellow flower"
+        },
+        {
+            "name": "IMG_7754.jpg",
+            "width": 4000,
+            "height": 4000,
+            "alt": "Large colorful flower"
+        },
+        {
+            "name": "IMG_7766.jpg",
+            "width": 3814,
+            "height": 3814,
+            "alt": "Red flowers"
+        },
+        {
+            "name": "IMG_7882.jpg",
+            "width": 2060,
+            "height": 2060,
+            "alt": "Bee on purple flower"
+        },
+        {
+            "name": "IMG_7891.jpg",
+            "width": 4000,
+            "height": 4000,
+            "alt": "Bee on yellow flower"
+        },
+        {
+            "name": "IMG_8300.jpg",
+            "width": 4000,
+            "height": 4000,
+            "alt": "Alligator in swamp"
+        },
+        {
+            "name": "IMG_8337.jpg",
+            "width": 3328,
+            "height": 3328,
+            "alt": "Alligator submerged"
+        }
     ]
 }
